@@ -1,0 +1,32 @@
+"VertexlitGeneric"
+{
+	"$basetexture" "models/valk/Halo2A/UNSC/Characters/ODST/ODST_Body_d"
+	"$bumpmap" "models/valk/Halo2A/UNSC/Characters/ODST/ODST_Body_n"
+	"$ambientocclusion" "1"
+	"$blendtintbybasealpha" "1"
+
+	"$color2" "[.45 .45 .5]"
+
+	"$phong" "1"
+	"$phongboost" ".5"
+	"$phongalbedotint" "1"
+	"$phongfresnelranges" "[3 5 7]"	
+	"$phongexponenttexture" "models/valk/Halo2A/UNSC/Characters/ODST/ODST_Body_EXP"
+	"$lightwarptexture" "models/valk/shared/lightwarp_metallic"
+	"$phongdisablehalflambert" "1.00"
+
+	"$rimlight" "1"
+	"$rimlightexponent" "3"
+	"$rimlightboost" "1"
+	"$rimlightpower" "50"
+	"$rimmask" "1"
+
+
+	Proxies
+	{
+		drc_ScalingRimLight
+		{
+			resultVar $rimlightboost
+		}
+	}
+}
